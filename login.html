@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Tela de Login com Backend e UI Melhorada</title>
+</head>
+<body>
+  <!-- Spinner de carregamento -->
+  <div id="spinner" class="spinner-overlay">
+    <div class="spinner"></div>
+  </div>
+  
+  <!-- Popup de Login -->
+  <div class="modal" id="loginModal">
+    <h2>Login</h2>
+    <div class="input-field">
+      <input type="text" id="username" placeholder=" " required>
+      <label for="username">Usuário</label>
+    </div>
+    <div class="input-field">
+      <input type="password" id="password" placeholder=" " required>
+      <label for="password">Senha</label>
+    </div>
+    <!-- Espaço para mensagens de login -->
+    <div id="loginMsg" class="message"></div>
+    <button class="button button-primary" onclick="login()">Login</button>
+    <button class="button button-secondary" onclick="openRegister()">Registrar</button>
+  </div>
+  
+  <!-- Popup de Cadastro -->
+  <div class="modal-bg" id="registerModal">
+    <div class="modal-register">
+      <span class="close-modal" onclick="closeRegister()">&times;</span>
+      <h2>Cadastro</h2>
+      <div class="input-field">
+        <input type="text" id="nome" placeholder=" " required>
+        <label for="nome">Nome</label>
+      </div>
+      <div class="input-field">
+        <input type="text" id="loginUser" placeholder=" " required>
+        <label for="loginUser">Login</label>
+      </div>
+      <div class="input-field">
+        <input type="password" id="senha" placeholder=" " required>
+        <label for="senha">Senha</label>
+      </div>
+      <div class="input-field">
+        <input type="password" id="confirmSenha" placeholder=" " required>
+        <label for="confirmSenha">Confirmar Senha</label>
+      </div>
+      <!-- Espaço para mensagens de cadastro -->
+      <div id="registerMsg" class="message"></div>
+      <button class="button button-primary" onclick="register()">Cadastrar</button>
+    </div>
+  </div>
+  
+  <script>
+    
+  </script>
+</body>
+</html>
