@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/style/reset.css">
+    <link rel="stylesheet" href="./src/style/base.css">
+    <link rel="stylesheet" href="./src/style/modelPopup.css">
+    <title>Login - Rifa K4juh</title>
+</head>
+<body>
+    <div id="spinner" class="spinner-overlay">
+        <div class="spinner"></div>
+    </div>
+
+    <div class="modelPopup">
+        <h2>Login</h2>
+        <div class="input-floating">
+            <input type="text" id="inpUsuario" placeholder=" " required>
+            <label for="inpUsuario">Usuário</label>
+        </div>
+        <div class="input-floating">
+            <input type="text" id="inpSenha" placeholder=" " required>
+            <label for="inpSenha">Senha</label>
+        </div>
+        <!-- Espaço para mensagens de login -->
+        <div id="loginMsg" class="message"></div>
+        <button class="button button-primary" onclick="login()">Login</button>
+    </div>
+    <script src="./src/script/login.js"></script>
+</body>
+</html>
